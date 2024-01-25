@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redbus</title>
+    <style>
+        .container{
+            height: 4500px;
+            width: 1350px;
+        }
+        .main{
+            border: 1px solid white;
+            height:80px;
+            width: 1350px;
+            display: flex;
+            gap: 50px;
+            box-shadow:rgba(0, 0, 0, 0.16) 0px 3px  6px;
+        }
+        .header{
+            height:80px;
+            width: 1350px;
+        }
+        .box{
+            height: 80px;
+            width: 1350px;
+            margin-top: 180px;
+            margin-left: 180px;
+            border-radius: 10px;
+            display: flex;
+            gap: 8px;
+           
+        }
+        .box1{
+            height: 80px;
+            width: 195px;
+            display: flex;
+            border-radius: 2px;
+            justify-content: center;
+            align-items: center;
+            color: #A0A0A0;
+            box-shadow: 1px 0 0 0;
+        }
+        .box1:hover{
+            border: 1px solid skyblue;
+            border-radius: 10px;
+            transition-duration: 1s;
+        }
+        .body{
+            height: 300px;
+            width: 1000px;
+            margin: auto;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+            border-radius: 10px;
+        }
+        .img1{
+            border: 1px solid rgb(161, 153, 153);
+            height: 300px;
+            width: 325px;
+            border-radius: 10px;
+        }
+        h2,p,h3,h4,h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #585858;
+        }
+        #center{
+            height: 250px;
+            width: 1350px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+            background-color: #F0F0F0;
+        }
+        .centerimg{
+            height: 250px;
+            width: 435px;
+        }
+        .one{
+            height: 150px;
+            width: 1350px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            gap:5px;
+        }
+        .hanaone{
+            height: 150px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+        .hanatwo{
+            height: 150px;
+            width: 480px;
+        }
+        #two{
+            height:670px;
+            width: 1300px;
+            display:grid;
+            grid-template:300px 300px/ auto auto auto;
+            padding: 10px;
+            gap: 20px;
+            margin: auto;
+        }
+        .item{
+            height: 230px;
+            width: 350px;
+            margin: auto;
+            border-radius: 20px;
+        }
+        .three{
+            border: 1px solid gray;
+            height: 170px;
+            width: 1100px;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .four{
+            border: 1px solid gray;
+            height: 170px;
+            width: 1100px;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 50px;
+        } 
+        .five{
+            border: 1px solid gray;
+            height: 170px;
+            width: 1100px;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .six{
+            height: 350px;
+            width: 1350pxs;
+            margin-top: 200px;
+        }
+        .sixone{
+            height: 200px;
+            width: 1100px;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .sixtwo{
+            height: 100px;
+            width: 1100px;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .seven{
+            height: 180px;
+            width: 800px;
+            margin: auto;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .sevenone{
+            height: 180px;
+            width: 200px;
+            margin: auto;
+        }
+        .seventwo{
+            height: 180px;
+            width: 400px;
+            margin: auto;
+        }
+        .eight{
+            height: 300px;
+            width: 1000px;
+            margin: auto;
+            margin-top: 80px;
+        }
+        .eightone{
+            height: 300px;
+            width:500px;
+            margin: auto;
+        }
+        dt{
+            font-size: small;
+            font-family: monospace;
+        }
+        dd{
+            font-size: x-large;
+        }
+        .conbox{
+            height: 170px;
+            width: 700px;
+        }
+        .picbox{
+            height: 170px;
+            width: 400px;
+        }
+        svg{
+            margin-left: 50px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+        }
+        ins{
+            row-gap: 10px;
+        }
+        input{
+            width: px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+            <img id="img2"src="image/redbus.jpg"style="width:150px;height:70px;margin-left:20px"/>
+            <button style="border: none;margin-left: 600px;background-color: white;">Help</button>
+            <select style="border: none;">
+            <option>INR</option>
+            <option>USD</option>
+            <option>UER</option>
+            <option>VND</option>
+            <option>BGN</option>
+            <option>MYR</option>
+            </select>
+
+            <select style="border: none;">
+            <option>Manage Booking</option>
+            <option>Cancel</option>
+            <option>Show my ticket</option>
+            <option>Email</option>
+            </select>
+            <button style="border: none;background-color: white;">Login</button> 
+    </div>
+
+    <div class="header">
+            <h1 style="margin-top:10px;font-family: sans-serif;padding:20px"><center>Book your journey now with the world's largest bus platform</center></h1>
+            <img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/HeroRDC.svg"style="width:1350px"/>
+    </div>
+
+    <div class="box">
+           <div class="box1">
+            <dl>
+            <dt style="margin-left: 35px;margin-top: 10px;color: black;">SOURCE</dt>
+            <dd><input type="text"placeholder="Ex: Paris"style="margin-right:35px;border:none;"></dd>
+            </dl>
+           </div>
+           <div class="box1">
+            <dl>
+            <dt style="margin-left: 35px;margin-top: 10px;color: black;">DESTINATION</dt>
+            <dd><input type="text"placeholder="Ex: London Airport"style="margin-right:35px;border:none;"></dd>
+            </dl>
+            </div>
+           <div class="box1">
+            <dl>
+            <dt style="margin-left: 35px;margin-top: 10px;color: black;">DATE</dt>
+            <dd><input type="date"style="border:none;"></dd>
+            </dl>
+           </div>
+           <div class="box1"><dl>
+            <dt style="margin-left: 35px;margin-top: 10px;color: black;">RETURN DATE</dt>
+            <dd><input placeholder="Optional"style="border:none;width:100px;"></dd></dl>
+           </div>
+           <div class="box1"style="background-color:#CF4A2E;"><h2><p style="font-family: monospace;color: white;">SEARCH</p></h2></div>
+    </div>
+
+    <div class="body">
+        <div class="img1">
+            <img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/36million.svg">
+            <center><p><h2>36 Million</h2></p>
+            <p>happy customers globally</p></center>
+        </div>
+        <div class="img1">
+            <img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/3500worldwide.svg"style="width:300px;height:150px">
+            <center><p><h2>Over 5000</h2></p>
+            <p>bus companies wordwide</p></center>
+        </div>
+        <div class="img1">
+            <img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/booked-perday.svg">
+            <center><p><h2>200,000+</h2></p>
+            <p>bus companies wordwide</p></center>
+        </div>
+    </div>
+    
+    <div id="center">
+           <div class="centerimg">
+            
+           <img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/AirportHome.svg"style="margin-left:50px;margin-top:20px"/>
+           </div>
+           <div class="centerimg">
+            <p><h4>INTRODUCING<h4>
+                <h3>AIRPORT TRANSFERS<h3>
+                You can travel low cost airport shuttles, trains & bus to and from your accomdation</p>
+           </div>
+           <div class="centerimg">
+                <button style="border: 2px solid skyblue;height:50px;width:300px;border-radius:10px;margin-top: 100px;margin-left: 60px;">BOOK NOW</button>
+           </div>
+    </div>
+
+    <div class="one">
+         <div class="hanaone">
+           <img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/adv1.svg"style="margin-top:30px;margin-left:100px">
+         </div>
+         <div class="hanatwo">
+            <h3>Worldwide coverage</h3>
+            <p style="margin-top: 2px;">Find affordable travel tickets across the world, all at one place</p>
+         </div>
+         <div class="hanaone">
+            <img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/Anxiety-free%20travel.svg"style="margin-top:30px;margin-left:100px">
+         </div>
+         <div class="hanatwo">
+            <h3>Anxiety-free travel</h3>
+            <p style="margin-top: 2px;">We ensure your information is safe and your travel is hassle free, wherever you go</p>
+         </div>
+         <div class="hanaone">
+            <img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/No%20hidden%20charges@3x%201.svg"style="margin-top:30px;margin-left:100px">
+         </div>
+         <div class="hanatwo">
+            <h3>No hidden charges</h3>
+            <p style="margin-top: 2px;">Find the best deals online and guess what, refunds are simple!</p>
+         </div>
+    </div>
+        <h1 style="margin-left: 470px;color: navy;"">Top Travelled Bus Routes</h1>
+
+    <div id="two">
+            <div class="item">
+              <img src="https://st.redbus.in/Images/rdc/Bratislava-ImResizer.jpeg"style="height:230px;width:350px;border-radius:20px;">
+              <p>Buses from<br><strong>Vienna to Bratislava</strong></p>
+            </div>
+            <div class="item">
+              <img src="https://st.redbus.in/Images/rdc/Oxford-ImResizer.jpeg"style="height:230px;width:350px;border-radius:20px;">
+              <p>Buses from<br><strong>London to Oxford</strong></p>
+            </div>
+            <div class="item">
+              <img src="https://st.redbus.in/Images/rdc/Prague-ImResizer.jpeg"style="height:230px;width:350px;border-radius:20px;">
+              <p>Buses from<br><strong>Berlin to Prague</strong></p>
+            </div>
+            <div class="item">
+              <img src="https://st.redbus.in/Images/rdc/Porto-ImResizer.jpeg"style="height:230px;width:350px;border-radius:20px;">
+              <p>Buses from<br><strong>Lisbon to Porto</strong></p>
+            </div>
+            <div class="item">
+               <img src="https://st.redbus.in/Images/rdc/Riga-ImResizer.jpeg"style="height:230px;width:350px;border-radius:20px;">
+               <p>Buses from<br><strong>Tallinn to Riga</strong></p>
+            </div>
+            <div class="item">
+                <img src="https://st.redbus.in/Images/rdc/Florence-ImResizer.jpeg"style="height:230px;width:350px;border-radius:20px;">
+                <p>Buses from<br><strong>Rome to Florence</strong></p>
+            </div>
+    </div>
+        <h1 style="margin-left: 550px;color: navy;"">It's all about travel</h1>
+
+    <div class="three">
+       <div class="conbox"><h2 style="margin-top: 50px;margin-left: 5px;">redBus is part of Makemytrip group which has been<br> listed on NASDAQ since 2010</h2></div>
+       <div class="picbox"><img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/Nasdaq_RDC.svg"></div>
+    </div>
+
+    <div class="four">
+        <div class="picbox"><img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/Partner.svg"></div>
+        <div class="conbox"><h2 style="margin-left: 30px;">We have two partner companies makemytrip.com and goibibo.com</h2></div>
+    </div>
+
+    <div class="five">
+        <div class="conbox"><h2 style="margin-top: 50px;margin-left: 5px;">Helping people book travel and accommodation for more than 20 years</h2></div>
+        <div class="picbox"><img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/Twentyyrs.svg"style="margin-top:20px;margin-left:20px;"></div>
+    </div>
+    
+    <div class="six"><img src="https://st.redbus.in/Images/rdc/weare.jpg"></div>
+
+    <h1 style="margin-left: 470px;color: black;margin-top: 80px;">We are about bus travel</h1>
+
+    <div class="sixone">
+    <p>redBus is the best platform in the world for booking bus tickets online. redBus is serving 6 countries around the world (India, Malaysia, Singapore, Indonesia, Peru, and Colombia), and would be launching bus ticket booking services in more countries. Trusted by over 18 million customers worldwide, redBus offers an easy, fast, and secure platform for booking cheap bus tickets. You only need to select your origin, destination, and date of departure, and you will find plenty of buses to travel by within a few seconds. You can book bus based on your preferred schedule, choose a pick-up and dropping point, preferred bus type, and book a bus ticket online with just a few clicks!</p>
+    </div>
+    <div class="sixtwo">
+    <p>redBus operates on over 7000 routes and has on-boarded over 2,300 bus operators globally. In addition to bus tickets booking for popular tourist destinations, one can also book cheap bus tickets to the remote and less popular places in India, Malaysia, Singapore, Indonesia, Peru, and Colombia through redBus. redBus has sold over 180 million tickets globally through its website and mobile app, ensuring hassle-free and memorable experience for booking bus tickets online.</p>
+    </div>
+    
+    <div class="seven">
+        <div class="sevenone"><img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/A%20new%20way%20of%20travelling@3x%201.svg"></div>
+        <div class="seventwo"><h2 style="color: darkblue;">A new way of travelling</h2><p>Stay up to date with the latest tips on navigating travel during COVID-19, based on your location</p></div>
+        <div class="sevenone"><button style="border:none;background-color:  tomato;height: 40px;width: 150px;border-radius: 5px;color: #F0F0F0;margin-top: 60px;margin-left: 30px;">Know More</button></div>
+    </div>
+    
+    <div class="eight">
+        <div class="eightone"><img src="file:///C:/Users/ELCOT/Documents/html%20pro/image/rdc-redbus-logo.svg"style="margin-top:50px;margin-left:200px;">
+        <p>redBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. redBus offers bus ticket booking through its website,iOS and Android mobile apps for all major routes.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+        </div>
+    </div>
+    <center><h3 style="margin-top: 80px;">2021 ibibogroup All rights reserved</h3></center>
+
+</div>
+</body>
+</html>
